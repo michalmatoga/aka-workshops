@@ -4,7 +4,7 @@ const fastify = Fastify({
 });
 
 fastify.get("/", async (_request, _reply) => {
-  return { hello: "world" };
+  return { hello: "world", host: os.hostname() };
 });
 
 /**
