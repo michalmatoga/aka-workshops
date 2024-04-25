@@ -16,6 +16,7 @@ spec:
     spec:
       containers:
         - image: ghcr.io/michalmatoga/aka-workshops:latest
+          imagePullPolicy: Always
           name: echo
           ports:
           - containerPort: 3000
